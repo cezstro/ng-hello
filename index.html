@@ -6,7 +6,17 @@
   </head>
   <body>
     <script src="http://code.angular.js/1.4.0/angular.js"></script>
-    <h1 ng-controller=''><h1>
+    <script type="javascript">
+      /*
+      *
+      */
+      
+      angular.module('app',[]).controller("HelloWorldCtrl", 
+      function($scope){
+        $scope.hellowMsg = "Hello World";
+      }
+    </script>
+    <h1 ng-controller="HelloWorldCtrl">{{helloMsg}}<h1>
     
   
   </body>
